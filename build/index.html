@@ -1,0 +1,95 @@
+
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Document</title>
+  <link href="/style/main.css" rel="stylesheet"/>
+</head>
+<body></body>
+<div class="pop-wrapper">
+  <div class="pop-content">
+    <header class="pop-header">
+      <h2>Предварительный заказ</h2>
+    </header>
+    <main class="pop-main">
+      <form class="store">
+        <h3>Выберите склад:</h3>
+        <input type="radio" name="store" id="store-nav" checked="checked"/>
+        <label for="store-nav">м. Савеловская <span class="store-info visible"> информация о складе </span></label>
+        <input type="radio" name="store" id="store-nag"/>
+        <label for="store-nag">м. Нагатинская <span class="store-info hidden"> информация о складе </span></label>
+        <input type="radio" name="store" id="store-aka"/>
+        <label for="store-aka">м. Академическая <span class="store-info hidden"> информация о складе </span></label>
+      </form>
+      <div class="calculator">
+        <div class="container">
+          <div class="tab-arrows"><a class="tab-arrow tab-arrow-left" href="#" data-target="prev"></a><a class="tab-arrow tab-arrow-right" href="#" data-target="prev"></a></div>
+        </div>
+        <h3>Размер бокса:</h3>
+        <ul class="tabs group">
+          <li class="active" data-item="1" id="bx_3218110189_122">
+            <div class="tabs__icon icon-1"></div>
+            <div class="tabs__checkbox">
+              <div class="tabs__checkbox-block"></div>
+            </div>
+            <div class="tabs__count">1 - 1,5 м2</div>
+          </li>
+          <li class="active" data-item="2" id="bx_3218110189_123">
+            <div class="tabs__icon icon-2"></div>
+            <div class="tabs__checkbox">
+              <div class="tabs__checkbox-block"></div>
+            </div>
+            <div class="tabs__count">2,5 - 5 м2</div>
+          </li>
+          <li class="active" data-item="3" id="bx_3218110189_121">
+            <div class="tabs__icon icon-3"></div>
+            <div class="tabs__checkbox">
+              <div class="tabs__checkbox-block"></div>
+            </div>
+            <div class="tabs__count">6 - 10 м2</div>
+          </li>
+          <li class="active" data-item="4" id="bx_3218110189_124">
+            <div class="tabs__icon icon-4"></div>
+            <div class="tabs__checkbox">
+              <div class="tabs__checkbox-block"></div>
+            </div>
+            <div class="tabs__count">10 - 12 м2</div>
+          </li>
+          <li class="active" data-item="5" id="bx_3218110189_125">
+            <div class="tabs__icon icon-5"></div>
+            <div class="tabs__checkbox">
+              <div class="tabs__checkbox-block"></div>
+            </div>
+            <div class="tabs__count">12+ м2</div>
+          </li>
+        </ul>
+        <h3>от 1 800 рублей в месяц</h3>
+      </div>
+      <form class="feedback clearfix">
+        <div class="pop-left-col">
+          <p>
+            <label for="pop-firstname">Имя: 
+              <input type="text" name="firstname" id="pop-firstname" value="attribute value"/>
+            </label>
+          </p>
+          <p>
+            <label for="pop-phone">Телефон: 
+              <input type="text" name="phone" id="pop-phone" value="attribute value"/>
+            </label>
+          </p>
+          <p>
+            <label for="pop-email">e-mail: 
+              <input type="email" name="firstname" id="pop-email" value="attribute value"/> 
+            </label>
+          </p>
+        </div>
+        <div class="pop-right-col">
+          <p class="pop-textarea">
+            <label for="pop-message">Сообщение:</label>
+            <textarea type="textarea" id="pop-message" name="message" rows="4"> </textarea>
+          </p>
+        </div>
+      </form>
+    </main>
+  </div>
+</div>

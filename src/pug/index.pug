@@ -1,0 +1,79 @@
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	title Document
+	link(href="/style/main.css" rel="stylesheet")
+
+body
+
+.pop-wrapper
+	.pop-content
+		header.pop-header
+			h2 Предварительный заказ
+		main.pop-main
+			form.store
+				h3 Выберите склад:
+
+				input(type="radio" name="store" id="store-nav" checked="checked")
+				label(for="store-nav") м. Савеловская <span class="store-info visible"> информация о складе </span>
+				
+
+				input(type="radio" name="store" id="store-nag")
+				label(for="store-nag") м. Нагатинская <span class="store-info hidden"> информация о складе </span>
+
+				input(type="radio" name="store" id="store-aka")
+				label(for="store-aka") м. Академическая <span class="store-info hidden"> информация о складе </span>
+
+			.calculator
+				.container
+					.tab-arrows
+						a(href="#" class="tab-arrow tab-arrow-left" data-target="prev")
+						a(href="#" class="tab-arrow tab-arrow-right" data-target="prev")
+				h3 Размер бокса:
+				ul.tabs.group
+					li(class="active" data-item="1" id="bx_3218110189_122")
+						.tabs__icon.icon-1
+						.tabs__checkbox
+							.tabs__checkbox-block
+						.tabs__count 1 - 1,5 м2
+
+					li(class="active" data-item="2" id="bx_3218110189_123")
+						.tabs__icon.icon-2
+						.tabs__checkbox
+							.tabs__checkbox-block
+						.tabs__count 2,5 - 5 м2
+
+					li(class="active" data-item="3" id="bx_3218110189_121")
+						.tabs__icon.icon-3
+						.tabs__checkbox
+							.tabs__checkbox-block
+						.tabs__count 6 - 10 м2
+
+					li(class="active" data-item="4" id="bx_3218110189_124")
+						.tabs__icon.icon-4
+						.tabs__checkbox
+							.tabs__checkbox-block
+						.tabs__count 10 - 12 м2
+
+					li(class="active" data-item="5" id="bx_3218110189_125")
+						.tabs__icon.icon-5
+						.tabs__checkbox
+							.tabs__checkbox-block
+						.tabs__count 12+ м2
+				h3 от 1 800 рублей в месяц
+
+			form.feedback.clearfix
+				.pop-left-col
+					p
+						label(for="pop-firstname") Имя: #[input(type="text" name="firstname" id="pop-firstname" value="attribute value")]
+					p
+						label(for="pop-phone") Телефон: #[input(type="text" name="phone" id="pop-phone" value="attribute value")]
+					p
+						label(for="pop-email") e-mail: #[input(type="email" name="firstname" id="pop-email" value="attribute value")] 
+				.pop-right-col
+					p.pop-textarea
+						label(for="pop-message") Сообщение:
+						textarea(type="textarea" id="pop-message" name="message" rows="4") 
+
+
+
